@@ -28,6 +28,8 @@ GEM
       dotenv
       mem
       slop
+    ruboty-alias (0.0.8)
+      ruboty (>= 1.1.1)
     ruboty-cron (1.1.0)
       activesupport
       chrono
@@ -57,6 +59,7 @@ PLATFORMS
 
 DEPENDENCIES
   rake
+  ruboty-alias
   ruboty-cron
   ruboty-echo
   ruboty-google_image
