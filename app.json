@@ -18,6 +18,12 @@
       "description": "The username of your ruboty's slack account.",
       "value": "ruboty"
     },
+    "CSE_KEY": {
+      "description": "HUBOT_GOOGLE_CSE_KEY"
+    },
+    "CSE_ID": {
+      "description": "HUBOT_GOOGLE_CSE_ID"
+    },
     "TZ": {
       "description": "Timezone.",
       "value": "Asia/Tokyo"
