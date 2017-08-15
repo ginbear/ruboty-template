@@ -6,18 +6,40 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    chrono (0.3.0)
+      activesupport
     concurrent-ruby (1.0.2)
     dotenv (2.1.1)
+    faraday (0.12.2)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.12.2)
+      faraday (>= 0.7.4, < 1.0)
     i18n (0.7.0)
     mem (0.1.5)
     minitest (5.9.1)
+    multipart-post (2.0.0)
     rake (11.3.0)
+    redis (3.3.3)
+    redis-namespace (1.5.3)
+      redis (~> 3.0, >= 3.0.4)
     ruboty (1.2.4)
       activesupport
       bundler
       dotenv
       mem
       slop
+    ruboty-cron (1.1.0)
+      activesupport
+      chrono
+      ruboty (>= 0.2.0)
+    ruboty-google_image (0.1.0)
+      faraday
+      faraday_middleware
+      ruboty
+    ruboty-redis (0.0.6)
+      redis
+      redis-namespace
+      ruboty
     ruboty-slack (0.1.12)
       ruboty (>= 1.0.4)
       xrc (>= 0.1.8)
@@ -33,6 +55,9 @@ PLATFORMS
 
 DEPENDENCIES
   rake
+  ruboty-cron
+  ruboty-google_image
+  ruboty-redis
   ruboty-slack
 
 BUNDLED WITH
